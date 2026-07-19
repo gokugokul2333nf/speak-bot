@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title">
+  <title id="title">Apple</title>
+  <rect width="320" height="240" rx="18" fill="#f7fbfa"/>
+  <ellipse cx="160" cy="132" rx="76" ry="70" fill="#c65f4a"/>
+  <path d="M160 65c-14-28-46-22-56-8 26 1 44 10 56 30 15-25 34-33 58-29-12-18-43-22-58 7z" fill="#d97761"/>
+  <path d="M163 69c12-30 37-43 66-38-9 26-37 44-66 38z" fill="#167461"/>
+  <path d="M159 67c-5-19-1-37 9-52" fill="none" stroke="#7a4b2a" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="134" cy="113" rx="15" ry="22" fill="#eaa08f" opacity=".78"/>
+  <ellipse cx="178" cy="194" rx="48" ry="10" fill="#dce5e1"/>
+</svg>

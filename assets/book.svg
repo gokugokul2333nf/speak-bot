@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title">
+  <title id="title">Book</title>
+  <rect width="320" height="240" rx="18" fill="#f7fbfa"/>
+  <path d="M58 64h96c18 0 32 14 32 32v92H92c-19 0-34-15-34-34V64z" fill="#167461"/>
+  <path d="M186 96c0-18 14-32 32-32h44v124h-76V96z" fill="#c89325"/>
+  <path d="M86 90h64M86 118h72M86 146h58" stroke="#ffffff" stroke-width="9" stroke-linecap="round" opacity=".9"/>
+  <path d="M214 92h28M214 120h28M214 148h28" stroke="#fff6df" stroke-width="9" stroke-linecap="round"/>
+  <path d="M186 96v100" stroke="#16221f" stroke-width="8" stroke-linecap="round" opacity=".24"/>
+  <ellipse cx="160" cy="213" rx="95" ry="11" fill="#dce5e1"/>
+</svg>

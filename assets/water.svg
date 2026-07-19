@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title">
+  <title id="title">Water</title>
+  <rect width="320" height="240" rx="18" fill="#f7fbfa"/>
+  <path d="M113 58h94l-12 131c-1 15-14 27-29 27h-12c-15 0-28-12-29-27L113 58z" fill="#e1ebfa" stroke="#315f9a" stroke-width="9"/>
+  <path d="M126 116c24 12 47 12 69 0l-7 67c-1 10-10 18-20 18h-16c-10 0-19-8-20-18l-6-67z" fill="#60aee8"/>
+  <ellipse cx="160" cy="58" rx="51" ry="14" fill="#f7fbfa" stroke="#315f9a" stroke-width="8"/>
+  <path d="M146 95c13 6 28 6 42 0" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+  <ellipse cx="160" cy="224" rx="58" ry="8" fill="#dce5e1"/>
+</svg>

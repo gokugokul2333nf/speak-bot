@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeakAgain - Desktop Speech Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="SpeakAgain navigation">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">SA</div>
+          <div>
+            <h1>SpeakAgain</h1>
+            <p>Home speech practice</p>
+          </div>
+        </div>
+
+        <nav class="nav-tabs" aria-label="Therapy sections">
+          <button class="nav-button is-active" type="button" data-section="words">
+            <span class="nav-icon" data-icon="image"></span>
+            <span>Picture Words</span>
+          </button>
+          <button class="nav-button" type="button" data-section="phrases">
+            <span class="nav-icon" data-icon="message"></span>
+            <span>Daily Phrases</span>
+          </button>
+          <button class="nav-button" type="button" data-section="matching">
+            <span class="nav-icon" data-icon="target"></span>
+            <span>Match Meaning</span>
+          </button>
+          <button class="nav-button" type="button" data-section="progress">
+            <span class="nav-icon" data-icon="chart"></span>
+            <span>Progress</span>
+          </button>
+        </nav>
+
+        <section class="sidebar-panel" aria-labelledby="goal-title">
+          <p class="section-kicker" id="goal-title">Daily goal</p>
+          <div class="goal-control">
+            <button class="icon-button" type="button" data-adjust-goal="-1" title="Decrease daily goal" aria-label="Decrease daily goal">
+              <span data-icon="minus"></span>
+            </button>
+            <output id="dailyGoal">8</output>
+            <button class="icon-button" type="button" data-adjust-goal="1" title="Increase daily goal" aria-label="Increase daily goal">
+              <span data-icon="plus"></span>
+            </button>
+          </div>
+        </section>
+
+        <section class="sidebar-panel">
+          <label class="toggle-row">
+            <span>Large text</span>
+            <input id="largeTextToggle" type="checkbox" />
+          </label>
+          <label class="toggle-row">
+            <span>Slower voice</span>
+            <input id="slowVoiceToggle" type="checkbox" />
+          </label>
+        </section>
+
+        <p class="therapy-note">Practice support, not a replacement for a speech-language therapist.</p>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="today-label" id="todayLabel">Today</p>
+            <h2 id="sectionTitle">Picture Words</h2>
+          </div>
+          <div class="topbar-actions">
+            <button class="ghost-button" type="button" id="resetTodayButton">
+              <span data-icon="rotate"></span>
+              <span>Reset Today</span>
+            </button>
+          </div>
+        </header>
+
+        <section class="stats-grid" aria-label="Today progress">
+          <article class="stat-card">
+            <span class="stat-icon" data-icon="check"></span>
+            <div>
+              <p>Completed</p>
+              <strong id="completedStat">0</strong>
+            </div>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon" data-icon="percent"></span>
+            <div>
+              <p>Accuracy</p>
+              <strong id="accuracyStat">0%</strong>
+            </div>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon" data-icon="flame"></span>
+            <div>
+              <p>Streak</p>
+              <strong id="streakStat">0 days</strong>
+            </div>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon" data-icon="clock"></span>
+            <div>
+              <p>Practice</p>
+              <strong id="minutesStat">0 min</strong>
+            </div>
+          </article>
+        </section>
+
+        <section class="goal-meter" aria-label="Daily goal progress">
+          <div>
+            <p class="section-kicker">Goal progress</p>
+            <strong id="goalSummary">0 of 8</strong>
+          </div>
+          <div class="meter-track">
+            <span id="goalMeter"></span>
+          </div>
+        </section>
+
+        <section class="practice-stage" id="practiceStage" aria-live="polite"></section>
+
+        <section class="lower-grid">
+          <section class="session-log" aria-labelledby="session-log-title">
+            <div class="panel-heading">
+              <h3 id="session-log-title">Session Log</h3>
+              <button class="icon-button" type="button" id="clearLogButton" title="Clear all history" aria-label="Clear all history">
+                <span data-icon="trash"></span>
+              </button>
+            </div>
+            <div class="log-list" id="sessionLog"></div>
+          </section>
+
+          <section class="caregiver-notes" aria-labelledby="notes-title">
+            <div class="panel-heading">
+              <h3 id="notes-title">Caregiver Notes</h3>
+              <span class="saved-label" id="notesSavedLabel">Saved</span>
+            </div>
+            <textarea id="caregiverNotes" rows="8" placeholder="Add observations, therapist advice, or words to practice next."></textarea>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

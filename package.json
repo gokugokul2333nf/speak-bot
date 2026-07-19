@@ -1,0 +1,9 @@
+{
+  "name": "speakagain-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Desktop-friendly aphasia speech therapy practice prototype.",
+  "scripts": {
+    "start": "python3 -m http.server 5179"
+  }
+}
