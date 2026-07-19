@@ -9,4 +9,4 @@ if lsof -iTCP:5179 -sTCP:LISTEN >/dev/null 2>&1; then
 fi
 
 (sleep 1 && open "$URL") &
-python3 -m http.server 5179 --bind 127.0.0.1
+npm start

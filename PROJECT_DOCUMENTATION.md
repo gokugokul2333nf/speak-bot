@@ -29,7 +29,7 @@ SpeakAgain is a support tool, not a replacement for professional speech therapy.
 | Frontend | HTML5 | Page structure and app layout |
 | Styling | CSS3 | Desktop UI, responsive layout, accessibility-friendly controls |
 | Logic | Vanilla JavaScript | Exercise flow, speech handling, scoring, rendering, persistence |
-| Local Server | Python HTTP server | Serves the app locally on `http://127.0.0.1:5179` |
+| Local Server | Node.js static server | Serves the app locally on `http://127.0.0.1:5179` |
 | Storage | Browser `localStorage` | Saves history, settings, goal, and notes |
 | Speech Output | Web Speech API | Reads prompts aloud |
 | Speech Input | Web Speech API | Converts patient speech into text |
@@ -122,6 +122,8 @@ speakagain-desktop/
   README.md
   PROJECT_DOCUMENTATION.md
   Start SpeakAgain.command
+  Start SpeakAgain Windows.bat
+  server.js
   assets/
     apple.svg
     book.svg
@@ -138,7 +140,9 @@ speakagain-desktop/
 | `app.js` | Contains exercise data, state management, rendering, speech logic, scoring, and event handlers |
 | `assets/*.svg` | Picture prompts for exercises |
 | `package.json` | Contains the local start script |
+| `server.js` | Serves the static files locally using Node.js |
 | `Start SpeakAgain.command` | macOS launcher for starting the app |
+| `Start SpeakAgain Windows.bat` | Windows launcher for starting the app |
 
 ## 6. Application Working Flow
 
